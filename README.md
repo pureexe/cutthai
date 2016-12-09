@@ -35,7 +35,7 @@ CutThai isn't recommend to use in production. but you can download lastest relea
 
 by using Node.js or CommonJS
 ``` javascript
-var Irin = require("cutthai")
+var CutThai = require("cutthai")
 ```
 
 by using normal browser
@@ -45,7 +45,7 @@ by using normal browser
 
 run some segmentation
 ```  javascript
-var bot = new Irin(function(err){
+var cutthai = new CutThai(function(err){
   if(err){
     throw err;
   }
