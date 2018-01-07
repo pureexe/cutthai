@@ -6,26 +6,26 @@ This work is base on document of [wordcut](https://github.com/veer66/wordcut) th
 
 ## Algorithm
 
-###1. Find wordlist
+### 1. Find wordlist
 
 this work is use Dictionary base you must have some Thai wordlist.
 you can found some Thai wordlist from
 - [LibThai](http://linux.thai.net/projects/libthai)
 - [Thai National Corpus](http://www.arts.chula.ac.th/~ling/TNC/category.php?id=58&)
 
-###2. Build word Trie
+### 2. Build word Trie
 convert wordlist from step 1 into trie to increase speed of searching.
 read more about trie: [Wikipedia - Trie](https://en.wikipedia.org/wiki/Trie)
 Note: This step is difference from [wordcut](https://github.com/veer66/wordcut), it using Binary search
 
-###3.Create wordgraph
+### 3.Create wordgraph
 Wordgraph is [graph](https://en.wikipedia.org/wiki/Graph_(discrete_mathematics)). use to determine position to word Segmentation where vertex is position to segmentation and Edge is word. create edge by compare input with trie.
 
-###4.Find shortest path
+### 4.Find shortest path
 Find shortest path from start vertex to end vertex by using SPFA
 read more about SPFA: [Wikipedia - SPFA](https://en.wikipedia.org/wiki/Shortest_Path_Faster_Algorithm)
 
-###5.Segmentation sentense to array
+### 5.Segmentation sentense to array
 use shortest path from step 4 to segmentation sentense and convert to array
 
 
